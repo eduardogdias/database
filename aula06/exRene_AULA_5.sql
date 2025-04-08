@@ -10,7 +10,7 @@ begin
         dbms_output.put_line(registro.employee_id);
     end loop; 
     
-    -- sql%rowcount - o nome dee um cursor anonimo por default é 'sql'
+    -- sql%rowcount - o nome dee um cursor anonimo por default Ã© 'sql'
     dbms_output.put_line('A query retornou ' || sql%rowcount || ' registros');
     
 end;
