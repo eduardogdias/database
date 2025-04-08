@@ -104,8 +104,7 @@ DECLARE
 
 BEGIN
 	-- Insere registros na tabela indexada
-	FOR emp IN (SELECT * 
-				FROM employees) LOOP			
+	FOR emp IN (SELECT * FROM employees) LOOP			
 		employees_data(emp.employee_id) := emp; -- Usa o employee_id como índice
 	END LOOP;
 
